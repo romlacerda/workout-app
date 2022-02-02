@@ -12,6 +12,7 @@ module.exports = {
     port: 8080,
   },
   resolve: {
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
     alias: {
       '@': path.resolve(__dirname, 'src/')
     },
@@ -33,7 +34,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-      }
+      },
+      { 
+        test: /\.tsx?$/, 
+        loader: 'ts-loader' 
+      },
     ],
   },
   plugins: [

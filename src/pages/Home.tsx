@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '@/components/Container/style';
+import Container from '../components/Container/style';
 import Today from './Today';
 
 const Home = () => {
@@ -13,6 +13,6 @@ const Home = () => {
       </Container>
     </div>
   )
-}
+};
 
 export default Home;
